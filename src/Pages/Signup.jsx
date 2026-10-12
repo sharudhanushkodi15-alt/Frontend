@@ -24,7 +24,7 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://backend-binding-3.onrender.com/api/signup", formData);
+      const res = await axios.post("https://backend-binding-3.onrender.com/api/auth/signup", formData);
       setMessage(res.data.message);
       setFormData({ name: "", email: "", password: "" });
 
